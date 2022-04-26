@@ -1,0 +1,124 @@
+﻿osConfig:
+  - type: linux
+    versions:
+      - Linux REHL8.4
+    environments:
+      - name: nonproductions
+        regions:
+          - canada
+          - APAC
+          - Caribbean
+          - UK
+          - US
+        domains:
+          - devfg.rbc.com
+          - saifg.rbc.com
+        resourceSizes:
+          - name: small 
+            cpu: 2.0
+            memory: 8
+            disk: 250
+          - name: medium
+            cpu: 4.0
+            memory: 16
+            disk: 250
+          - name: large
+            cpu: 4.0
+            memory: 16
+            disk: 250
+          - name: maximum
+            cpu: 16
+            memory: 64
+            disk: 1000
+          - name: maximum-platinum
+            cpu: 16
+            memory: 128
+            disk: 1000
+      - name: production
+        regions:
+          - canada
+          - APAC
+          - Caribbean
+          - UK
+          - US
+        domains:
+          - fg.rbc.com
+        resourceSizes:
+          - name: small 
+            cpu: 2.0
+            memory: 8
+            disk: 250
+          - name: medium
+            cpu: 4.0
+            memory: 16
+            disk: 250
+          - name: large
+            cpu: 4.0
+            memory: 16
+            disk: 250   
+    software:
+      url: this is the url for all packages
+      custom:
+        - Apache
+        - Java 8
+        - Java 11
+        - NGINX
+        - Oracle Client
+        - Unix ODBC
+        - GIT
+  - type: windows
+    versions:
+      - Windows Server 2019
+    environments:
+      - name: nonproduction
+        domains:
+          - devfg.rbc.com
+          - saifg.rbc.com
+        resourceSizes:
+          - name: small 
+            cpu: 2
+            memory: 8
+            disk: 250
+          - name: medium
+            cpu: 4
+            memory: 16
+            disk: 250
+          - name: large
+            cpu: 4  
+            memory: 16
+            disk: 250
+      - name: production
+        domains:
+          - fg.rbc.com
+          - birch.fg.rbc.com 
+          - maple.fg.rbc.com
+          - oak.fg.rbc.com
+          - palm.fg.rbc.com
+          - pine.fg.rbc.com
+          - corp.isib.net
+        resourceSizes:
+          - name: small 
+            cpu: 2
+            memory: 8
+            disk: 250
+          - name: medium
+            cpu: 4
+            memory: 16
+            disk: 250
+          - name: large
+            cpu: 4  
+            memory: 16
+            disk: 250
+          - name: maximum
+            cpu: 16
+            memory: 128
+            disk: 1000
+          - name: maximum-platinum
+            cpu: 16
+            memory: 128
+            disk: 1000
+    software:
+      url: this is the url for all packages
+      custom:
+        - Dynatrace
+        - IIS
