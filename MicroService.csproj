@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
 	<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
 	<ApplicationIcon />
-	<OutputType>Library</OutputType>
+	<OutputType>Exe</OutputType>
 	<StartupObject />
 	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 	<DockerfileContext>.</DockerfileContext>
